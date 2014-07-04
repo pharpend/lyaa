@@ -1,8 +1,9 @@
-\chapter{Categorizing things}
+\chapter{Pedantry}
 
-I did my best in the first chapter to establish that mathematical notation works
-best if it is designed with the end of laziness in mind. So, this chapter is
-devoted entirely to laziness. 
+There are a number of points I would like to get in, but they don't really fit
+in the rest of the book. So, here they are.
+
+\section{$\l$-calculus}
 
 Perhaps the laziest group of mathematicians are those who study
 $\l$-calculus. In fact, one of the things they study is how to read their own
@@ -54,5 +55,62 @@ There are, as far as we are concerned, four things that you do in $\l$-calculus.
   
   Isn't that much clearer?
   
-\item The next is $\B$-reduction.
+\item The next is $\B$-reduction. Let's look at this function:
+
+  \[ \l x, y \to x \times y\]
+  
+  Well, what's that function, with the argument $x=5$? 
+
+  \[ \l 5, y \to 5 \times y \]
+
+  Well, since 5 is always there, we can just rewrite the function as
+
+  \[ \l y \to 5 \times y \]
+
+  That's called a $\B$-reduction - where you ``partially apply'' a function, so
+  to speak - you non-exhaustively apply arguments to a function, and see what
+  the new function looks like. 
 \end{enumerate}
+
+I would encourage the reader to try combining these ideas, and see what he can
+come up with.
+
+\section{Programming}
+
+\begin{quotation}
+  I think everybody in this country should learn how to program a
+  computer $\ldots$ because it teaches you how to think.
+
+  -- Steve Jobs
+\end{quotation}
+
+\begin{quotation}
+  When you're programming, you're teaching, possibly the stupidest thing in the
+  entire universe, a computer, how to do something.
+  
+  -- Gabe Newell
+\end{quotation}
+
+You can read as many books as you want. Nothing will teach you the discipline of
+logical thought like programming. Programming teaches you how to break down
+problems into smaller, discrete problems, and to compose those solutions. If you
+intend to learn more about math or physics, or even something blue-collar like
+biology or engineering, I strongly recommend learning how to program, because,
+as Steve Jobs said, it teaches you how to think.
+
+The people on Python's IRC channel suggested
+\href{http://learnpythonthehardway.org/book/}{Learn Python the Hard Way} as a
+good starting point, if you don't already know how to program.
+
+My favorite programming language is
+\href{http://en.wikipedia.org/wiki/Haskell_(programming_language)}{Haskell}. Haskell
+is probably the best programming language when it comes to
+mathematically-oriented thinking. If you already know how to program, but don't
+know Haskell, I suggest Miran Lipovača's wonderful book,
+\href{http://learnyouahaskell.com/chapters}{Learn You a Haskell for Great Good!}
+
+Haskell, the programming language, is named after Haskell Curry, the namesake
+behind the notation we used for expressing type signatures.
+
+For complicated concepts and algorithms, I will likely include explanations with
+Haskell code. 
